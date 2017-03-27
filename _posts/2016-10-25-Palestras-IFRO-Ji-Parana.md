@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Palestra sobre Docker e Microserviços.
+title: Palestra sobre Docker e Microserviços
 ---
 
 ![palestra1](/assets/palestra1.jpeg)

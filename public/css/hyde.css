@@ -72,14 +72,14 @@ html {
 
 /* Sidebar links */
 .sidebar a {
-  color: #000;
+  color: #fff;
 }
 
 /* About section */
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: "Nova Oval", cursive;
+  font-family: 'Roboto', sans-serif;
   font-size: 3.25rem;
 }
 
