@@ -1,37 +1,317 @@
----
-layout: default
-title: Home
----
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Rousseau Braga - Senior DevOps Engineer, Site Reliability Engineer, and Platform Engineer based in Porto Velho, Rondonia, Brazil."
+    >
+    <title>Rousseau Braga | Senior DevOps Engineer</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="#top">Rousseau Braga</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Open menu</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#summary">Summary</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#credentials">Credentials</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow">Senior DevOps Engineer | SRE | Platform Engineer</p>
+          <h1 id="hero-title">Rousseau Braga</h1>
+          <p class="hero-copy">
+            DevOps and reliability engineer with 20+ years in IT and 10+ years focused on cloud
+            infrastructure, automation, platform engineering, and enterprise reliability.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="mailto:braga.rousseau@gmail.com">Email Rousseau</a>
+            <a class="button secondary" href="https://linkedin.com/in/rousseau-braga-71840944" rel="me">
+              LinkedIn
+            </a>
+          </div>
+        </div>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+        <aside class="hero-card" aria-label="Contact summary">
+          <div class="profile-mark" aria-hidden="true">RB</div>
+          <dl class="quick-facts">
+            <div>
+              <dt>Location</dt>
+              <dd>Porto Velho, Rondonia, Brazil</dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:braga.rousseau@gmail.com">braga.rousseau@gmail.com</a></dd>
+            </div>
+            <div>
+              <dt>LinkedIn</dt>
+              <dd>
+                <a href="https://linkedin.com/in/rousseau-braga-71840944" rel="me">
+                  linkedin.com/in/rousseau-braga-71840944
+                </a>
+              </dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
 
-    {{ post.content }}
-  </div>
-  {% endfor %}
-</div>
+      <section class="section summary-section" id="summary">
+        <div class="section-heading">
+          <p class="eyebrow">Professional Summary</p>
+          <h2>Reliable platforms, automated infrastructure, and stronger delivery practices.</h2>
+        </div>
+        <div class="summary-copy">
+          <p>
+            Senior DevOps Engineer and Site Reliability Engineer with over 20 years of experience in
+            Information Technology and more than 10 years focused on DevOps, Platform Engineering,
+            Cloud Infrastructure, Automation, and Reliability.
+          </p>
+          <p>
+            Strong experience designing, automating, and operating enterprise platforms using
+            Kubernetes, OpenShift, Terraform, Ansible, GitOps, and CI/CD practices. Proven track
+            record supporting mission-critical environments, improving platform reliability,
+            automating infrastructure provisioning, and enabling development teams through modern
+            DevOps methodologies.
+          </p>
+          <p>
+            Experienced in cloud technologies, infrastructure automation, container platforms,
+            security best practices, and operational excellence.
+          </p>
+        </div>
+      </section>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+      <section class="section muted-section" id="skills">
+        <div class="section-heading">
+          <p class="eyebrow">Technical Skills</p>
+          <h2>Hands-on experience across cloud, containers, automation, security, and observability.</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Cloud &amp; Infrastructure</h3>
+            <ul class="tag-list">
+              <li>AWS</li>
+              <li>Azure</li>
+              <li>VMware vSphere</li>
+              <li>Terraform</li>
+              <li>Infrastructure as Code</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Containers &amp; Orchestration</h3>
+            <ul class="tag-list">
+              <li>Kubernetes</li>
+              <li>OpenShift</li>
+              <li>Rancher</li>
+              <li>Docker</li>
+              <li>Podman</li>
+              <li>Helm</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>DevOps &amp; CI/CD</h3>
+            <ul class="tag-list">
+              <li>GitLab CI/CD</li>
+              <li>Jenkins</li>
+              <li>Bamboo</li>
+              <li>GitHub Actions</li>
+              <li>ArgoCD</li>
+              <li>GitOps</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Automation &amp; Scripting</h3>
+            <ul class="tag-list">
+              <li>Ansible</li>
+              <li>AWX</li>
+              <li>Python</li>
+              <li>Bash</li>
+              <li>Shell Scripting</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Security &amp; Identity</h3>
+            <ul class="tag-list">
+              <li>HashiCorp Vault</li>
+              <li>Keycloak</li>
+              <li>Red Hat Build of Keycloak</li>
+              <li>RBAC</li>
+              <li>TLS / PKI</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Monitoring &amp; Observability</h3>
+            <ul class="tag-list">
+              <li>ELK Stack</li>
+              <li>Zabbix</li>
+              <li>Prometheus</li>
+              <li>Grafana</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Operating Systems</h3>
+            <ul class="tag-list">
+              <li>Red Hat Enterprise Linux</li>
+              <li>Ubuntu</li>
+              <li>Windows Server</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="section-heading">
+          <p class="eyebrow">Professional Experience</p>
+          <h2>Enterprise platforms, mission-critical operations, and cloud-native delivery.</h2>
+        </div>
+        <div class="experience-list">
+          <article class="experience-card">
+            <div class="experience-meta">
+              <p class="date-range">February 2017 - Present</p>
+              <h3>Tribunal de Justiça do Estado de Rondônia</h3>
+              <p>DevOps Engineer / Site Reliability Engineer</p>
+            </div>
+            <div class="experience-detail">
+              <ul>
+                <li>Design, deploy, and maintain Kubernetes and OpenShift platforms for enterprise workloads.</li>
+                <li>Implement GitOps workflows using ArgoCD to automate application deployments.</li>
+                <li>Automate infrastructure provisioning and configuration management using Terraform and Ansible.</li>
+                <li>Build and maintain CI/CD pipelines supporting development and operations teams.</li>
+                <li>Implement and manage secrets management solutions using HashiCorp Vault.</li>
+                <li>Support mission-critical judicial systems with high availability and reliability requirements.</li>
+                <li>Lead and mentor SRE engineers in platform operations, automation, and reliability practices.</li>
+                <li>Improve deployment efficiency, platform stability, and operational processes.</li>
+              </ul>
+              <p class="tech-line">
+                Kubernetes, OpenShift, Terraform, Ansible, ArgoCD, GitLab CI/CD, Vault, Linux, Rancher
+              </p>
+            </div>
+          </article>
+
+          <article class="experience-card">
+            <div class="experience-meta">
+              <p class="date-range">August 2021 - July 2022</p>
+              <h3>Webera (USA)</h3>
+              <p>DevOps Engineer / SRE</p>
+            </div>
+            <div class="experience-detail">
+              <ul>
+                <li>Supported Kubernetes environments running on AWS and GCP.</li>
+                <li>Implemented Infrastructure as Code using Terraform.</li>
+                <li>Built and maintained CI/CD workflows using GitHub Actions.</li>
+                <li>Assisted development teams with cloud-native deployments and platform operations.</li>
+                <li>Performed infrastructure automation and operational support activities.</li>
+              </ul>
+              <p class="tech-line">AWS, GCP, Kubernetes, Terraform, GitHub Actions, Docker</p>
+            </div>
+          </article>
+
+          <article class="experience-card">
+            <div class="experience-meta">
+              <p class="date-range">December 2014 - January 2017</p>
+              <h3>Tribunal de Contas do Estado de Rondônia</h3>
+              <p>DevOps Engineer</p>
+            </div>
+            <div class="experience-detail">
+              <ul>
+                <li>Implemented Infrastructure as Code and automation practices.</li>
+                <li>Built CI/CD pipelines using Bamboo, Git, and automation tools.</li>
+                <li>Introduced Docker-based deployment processes.</li>
+                <li>Improved software delivery speed and deployment consistency.</li>
+                <li>Integrated SonarQube into the development lifecycle to improve code quality.</li>
+              </ul>
+              <p class="tech-line">Docker, Bamboo, Git, Linux, SonarQube</p>
+            </div>
+          </article>
+
+          <article class="experience-card">
+            <div class="experience-meta">
+              <p class="date-range">1992 - 2014</p>
+              <h3>Previous Experience</h3>
+              <p>System Administrator | IT Manager | Technology Director | IT Consultant</p>
+            </div>
+            <div class="experience-detail">
+              <ul>
+                <li>Linux and Windows administration.</li>
+                <li>Enterprise infrastructure, networking, security, and virtualization.</li>
+                <li>IT operations management, systems integration, and infrastructure automation.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section credential-section" id="credentials">
+        <div class="section-heading">
+          <p class="eyebrow">Credentials</p>
+          <h2>Certifications, education, and languages.</h2>
+        </div>
+        <div class="credential-grid">
+          <article class="info-card">
+            <h3>Certifications</h3>
+            <ul>
+              <li>GitOps Certified for Argo</li>
+              <li>ITIL Intermediate - Operational Support and Analysis</li>
+              <li>Terraform Infrastructure Automation</li>
+              <li>Kubernetes Training and Certification Programs</li>
+            </ul>
+          </article>
+          <article class="info-card">
+            <h3>Education</h3>
+            <div class="stacked-list">
+              <div>
+                <strong>MBA - Software Engineering</strong>
+                <span>IGTI - Instituto de Gestão em Tecnologia da Informação</span>
+              </div>
+              <div>
+                <strong>Bachelor's Degree - Systems Analysis and Development</strong>
+                <span>UNOPAR</span>
+              </div>
+            </div>
+          </article>
+          <article class="info-card">
+            <h3>Languages</h3>
+            <div class="language-list">
+              <p><strong>Portuguese:</strong> Native</p>
+              <p><strong>English:</strong> Professional Working Proficiency</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Available for DevOps, SRE, platform engineering, and reliability work.</h2>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:braga.rousseau@gmail.com">braga.rousseau@gmail.com</a>
+          <a href="https://linkedin.com/in/rousseau-braga-71840944" rel="me">
+            linkedin.com/in/rousseau-braga-71840944
+          </a>
+          <a href="https://www.nuxman.com.br">www.nuxman.com.br</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> Rousseau Braga. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
