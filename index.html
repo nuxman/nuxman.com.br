@@ -45,11 +45,13 @@
             DevOps and reliability engineer with 20+ years in IT and 10+ years focused on cloud
             infrastructure, automation, platform engineering, and enterprise reliability.
           </p>
-          <div class="hero-actions" aria-label="Primary actions">
+          <div class="hero-actions" aria-label="Primary actions" data-i18n-attr="aria-label:hero.actionsLabel">
             <a class="button primary" href="mailto:braga.rousseau@gmail.com" data-i18n="hero.email">Email Rousseau</a>
+            <a class="button secondary" href="assets/files/Rousseau_Braga_CV.pdf" download data-i18n="hero.download">Download CV</a>
             <a class="button secondary" href="https://linkedin.com/in/rousseau-braga-71840944" rel="me">
               LinkedIn
             </a>
+            <a class="button secondary" href="https://github.com/nuxman" rel="me">GitHub</a>
           </div>
         </div>
 
@@ -80,8 +82,35 @@
                 </a>
               </dd>
             </div>
+            <div>
+              <dt>GitHub</dt>
+              <dd>
+                <a href="https://github.com/nuxman" rel="me">
+                  github.com/nuxman
+                </a>
+              </dd>
+            </div>
           </dl>
         </aside>
+      </section>
+
+      <section class="stats-section" aria-label="Career highlights" data-i18n-attr="aria-label:stats.label">
+        <div class="stat-card">
+          <strong data-i18n="stats.it.value">20+ Years</strong>
+          <span data-i18n="stats.it.label">in IT</span>
+        </div>
+        <div class="stat-card">
+          <strong data-i18n="stats.devops.value">10+ Years</strong>
+          <span data-i18n="stats.devops.label">in DevOps/SRE</span>
+        </div>
+        <div class="stat-card">
+          <strong data-i18n="stats.platforms.value">Enterprise</strong>
+          <span data-i18n="stats.platforms.label">Platforms</span>
+        </div>
+        <div class="stat-card">
+          <strong data-i18n="stats.cloud.value">Cloud &amp; Automation</strong>
+          <span data-i18n="stats.cloud.label">Specialist</span>
+        </div>
       </section>
 
       <section class="section summary-section" id="summary">
@@ -197,7 +226,7 @@
             <div class="experience-meta">
               <p class="date-range" data-i18n="experience.tjro.date">February 2017 - Present</p>
               <h3>Tribunal de Justiça do Estado de Rondônia</h3>
-              <p>DevOps Engineer / Site Reliability Engineer</p>
+              <p data-i18n="experience.tjro.role">DevOps Engineer / Site Reliability Engineer</p>
             </div>
             <div class="experience-detail">
               <ul>
@@ -220,7 +249,7 @@
             <div class="experience-meta">
               <p class="date-range" data-i18n="experience.webera.date">August 2021 - July 2022</p>
               <h3>Webera (USA)</h3>
-              <p>DevOps Engineer / SRE</p>
+              <p data-i18n="experience.webera.role">DevOps Engineer / SRE</p>
             </div>
             <div class="experience-detail">
               <ul>
@@ -238,7 +267,7 @@
             <div class="experience-meta">
               <p class="date-range" data-i18n="experience.tce.date">December 2014 - January 2017</p>
               <h3>Tribunal de Contas do Estado de Rondônia</h3>
-              <p>DevOps Engineer</p>
+              <p data-i18n="experience.tce.role">DevOps Engineer</p>
             </div>
             <div class="experience-detail">
               <ul>
@@ -256,7 +285,7 @@
             <div class="experience-meta">
               <p class="date-range">1992 - 2014</p>
               <h3 data-i18n="experience.previous.title">Previous Experience</h3>
-              <p>System Administrator | IT Manager | Technology Director | IT Consultant</p>
+              <p data-i18n="experience.previous.role">System Administrator | IT Manager | Technology Director | IT Consultant</p>
             </div>
             <div class="experience-detail">
               <ul>
@@ -271,33 +300,51 @@
 
       <section class="section muted-section" id="projects">
         <div class="section-heading">
-          <p class="eyebrow" data-i18n="projects.eyebrow">Featured Projects</p>
+          <p class="eyebrow" data-i18n="projects.eyebrow">Key Projects</p>
           <h2 data-i18n="projects.heading">Practical platform work focused on reliability, automation, and delivery speed.</h2>
         </div>
         <div class="project-grid">
           <article class="project-card">
-            <h3 data-i18n="projects.platform.title">Enterprise Kubernetes and OpenShift Platforms</h3>
-            <p data-i18n="projects.platform.copy">
-              Designed, deployed, and operated container platforms for enterprise workloads with a
-              strong focus on availability, reliability, and developer enablement.
+            <h3 data-i18n="projects.kubernetesUpgrades.title">Kubernetes Platform Upgrades</h3>
+            <p data-i18n="projects.kubernetesUpgrades.copy">
+              Planned and executed Kubernetes platform upgrades with minimal downtime.
             </p>
-            <p class="tech-line">Kubernetes, OpenShift, Rancher, Linux</p>
+            <p class="tech-line">Kubernetes, OpenShift, Rancher</p>
           </article>
           <article class="project-card">
-            <h3 data-i18n="projects.gitops.title">GitOps Delivery Automation</h3>
+            <h3 data-i18n="projects.gitops.title">GitOps with ArgoCD</h3>
             <p data-i18n="projects.gitops.copy">
-              Implemented GitOps workflows and CI/CD pipelines to standardize deployments, reduce
-              manual work, and improve release consistency across teams.
+              Implemented GitOps workflows using ArgoCD for Kubernetes and OpenShift application deployments.
             </p>
-            <p class="tech-line">ArgoCD, GitLab CI/CD, GitHub Actions, Docker</p>
+            <p class="tech-line">ArgoCD, Kubernetes, OpenShift</p>
           </article>
           <article class="project-card">
-            <h3 data-i18n="projects.infrastructure.title">Infrastructure Automation and Secrets Management</h3>
-            <p data-i18n="projects.infrastructure.copy">
-              Automated infrastructure provisioning, configuration management, and secrets handling
-              for secure, repeatable, and auditable platform operations.
+            <h3 data-i18n="projects.vaultExternalSecrets.title">Vault + External Secrets Operator</h3>
+            <p data-i18n="projects.vaultExternalSecrets.copy">
+              Centralized secrets management using HashiCorp Vault and External Secrets Operator across Kubernetes environments.
             </p>
-            <p class="tech-line">Terraform, Ansible, HashiCorp Vault, AWS</p>
+            <p class="tech-line">HashiCorp Vault, External Secrets Operator</p>
+          </article>
+          <article class="project-card">
+            <h3 data-i18n="projects.keycloakMigration.title">Keycloak Migration</h3>
+            <p data-i18n="projects.keycloakMigration.copy">
+              Migrated enterprise identity services using Red Hat Build of Keycloak on Kubernetes/OpenShift.
+            </p>
+            <p class="tech-line">Keycloak, OpenShift, Kubernetes</p>
+          </article>
+          <article class="project-card">
+            <h3 data-i18n="projects.rancherUpgrade.title">Rancher Platform Upgrade</h3>
+            <p data-i18n="projects.rancherUpgrade.copy">
+              Supported Rancher platform upgrades and Kubernetes cluster lifecycle management.
+            </p>
+            <p class="tech-line">Rancher, Kubernetes</p>
+          </article>
+          <article class="project-card">
+            <h3 data-i18n="projects.vaultDr.title">Disaster Recovery for Vault</h3>
+            <p data-i18n="projects.vaultDr.copy">
+              Tested Vault disaster recovery scenarios, including backup, restore, and service recovery validation.
+            </p>
+            <p class="tech-line">HashiCorp Vault, Backup, Recovery</p>
           </article>
         </div>
       </section>
@@ -350,6 +397,7 @@
           <a href="https://linkedin.com/in/rousseau-braga-71840944" rel="me">
             linkedin.com/in/rousseau-braga-71840944
           </a>
+          <a href="https://github.com/nuxman" rel="me">github.com/nuxman</a>
           <a href="https://www.nuxman.com.br">www.nuxman.com.br</a>
         </div>
       </section>

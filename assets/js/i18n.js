@@ -20,11 +20,32 @@ window.cvI18n = {
       },
       hero: {
         eyebrow: "Senior DevOps Engineer | SRE | Platform Engineer",
+        actionsLabel: "Primary actions",
         copy:
           "DevOps and reliability engineer with 20+ years in IT and 10+ years focused on cloud infrastructure, automation, platform engineering, and enterprise reliability.",
         email: "Email Rousseau",
+        download: "Download CV",
         locationLabel: "Location",
         location: "Porto Velho, Rondonia, Brazil",
+      },
+      stats: {
+        label: "Career highlights",
+        it: {
+          value: "20+ Years",
+          label: "in IT",
+        },
+        devops: {
+          value: "10+ Years",
+          label: "in DevOps/SRE",
+        },
+        platforms: {
+          value: "Enterprise",
+          label: "Platforms",
+        },
+        cloud: {
+          value: "Cloud & Automation",
+          label: "Specialist",
+        },
       },
       summary: {
         eyebrow: "Professional Summary",
@@ -52,6 +73,7 @@ window.cvI18n = {
         heading: "Enterprise platforms, mission-critical operations, and cloud-native delivery.",
         tjro: {
           date: "February 2017 - Present",
+          role: "DevOps Engineer / Site Reliability Engineer",
           b1: "Design, deploy, and maintain Kubernetes and OpenShift platforms for enterprise workloads.",
           b2: "Implement GitOps workflows using ArgoCD to automate application deployments.",
           b3: "Automate infrastructure provisioning and configuration management using Terraform and Ansible.",
@@ -63,6 +85,7 @@ window.cvI18n = {
         },
         webera: {
           date: "August 2021 - July 2022",
+          role: "DevOps Engineer / SRE",
           b1: "Supported Kubernetes environments running on AWS and GCP.",
           b2: "Implemented Infrastructure as Code using Terraform.",
           b3: "Built and maintained CI/CD workflows using GitHub Actions.",
@@ -71,6 +94,7 @@ window.cvI18n = {
         },
         tce: {
           date: "December 2014 - January 2017",
+          role: "DevOps Engineer",
           b1: "Implemented Infrastructure as Code and automation practices.",
           b2: "Built CI/CD pipelines using Bamboo, Git, and automation tools.",
           b3: "Introduced Docker-based deployment processes.",
@@ -79,28 +103,41 @@ window.cvI18n = {
         },
         previous: {
           title: "Previous Experience",
+          role: "System Administrator | IT Manager | Technology Director | IT Consultant",
           b1: "Linux and Windows administration.",
           b2: "Enterprise infrastructure, networking, security, and virtualization.",
           b3: "IT operations management, systems integration, and infrastructure automation.",
         },
       },
       projects: {
-        eyebrow: "Featured Projects",
+        eyebrow: "Key Projects",
         heading: "Practical platform work focused on reliability, automation, and delivery speed.",
-        platform: {
-          title: "Enterprise Kubernetes and OpenShift Platforms",
-          copy:
-            "Designed, deployed, and operated container platforms for enterprise workloads with a strong focus on availability, reliability, and developer enablement.",
+        kubernetesUpgrades: {
+          title: "Kubernetes Platform Upgrades",
+          copy: "Planned and executed Kubernetes platform upgrades with minimal downtime.",
         },
         gitops: {
-          title: "GitOps Delivery Automation",
-          copy:
-            "Implemented GitOps workflows and CI/CD pipelines to standardize deployments, reduce manual work, and improve release consistency across teams.",
+          title: "GitOps with ArgoCD",
+          copy: "Implemented GitOps workflows using ArgoCD for Kubernetes and OpenShift application deployments.",
         },
-        infrastructure: {
-          title: "Infrastructure Automation and Secrets Management",
+        vaultExternalSecrets: {
+          title: "Vault + External Secrets Operator",
           copy:
-            "Automated infrastructure provisioning, configuration management, and secrets handling for secure, repeatable, and auditable platform operations.",
+            "Centralized secrets management using HashiCorp Vault and External Secrets Operator across Kubernetes environments.",
+        },
+        keycloakMigration: {
+          title: "Keycloak Migration",
+          copy:
+            "Migrated enterprise identity services using Red Hat Build of Keycloak on Kubernetes/OpenShift.",
+        },
+        rancherUpgrade: {
+          title: "Rancher Platform Upgrade",
+          copy: "Supported Rancher platform upgrades and Kubernetes cluster lifecycle management.",
+        },
+        vaultDr: {
+          title: "Disaster Recovery for Vault",
+          copy:
+            "Tested Vault disaster recovery scenarios, including backup, restore, and service recovery validation.",
         },
       },
       credentials: {
@@ -148,11 +185,32 @@ window.cvI18n = {
       },
       hero: {
         eyebrow: "Senior DevOps Engineer | SRE | Platform Engineer",
+        actionsLabel: "Ações principais",
         copy:
           "Engenheiro de DevOps e confiabilidade com mais de 20 anos em TI e mais de 10 anos focado em infraestrutura cloud, automação, platform engineering e confiabilidade corporativa.",
         email: "Enviar email",
+        download: "Baixar CV",
         locationLabel: "Localização",
         location: "Porto Velho, Rondônia, Brasil",
+      },
+      stats: {
+        label: "Destaques de carreira",
+        it: {
+          value: "20+ anos",
+          label: "em TI",
+        },
+        devops: {
+          value: "10+ anos",
+          label: "em DevOps/SRE",
+        },
+        platforms: {
+          value: "Plataformas",
+          label: "Corporativas",
+        },
+        cloud: {
+          value: "Cloud e Automação",
+          label: "Especialista",
+        },
       },
       summary: {
         eyebrow: "Resumo Profissional",
@@ -180,6 +238,7 @@ window.cvI18n = {
         heading: "Plataformas corporativas, operações de missão crítica e entrega cloud-native.",
         tjro: {
           date: "Fevereiro de 2017 - Presente",
+          role: "DevOps Engineer / Site Reliability Engineer",
           b1: "Desenho, implantação e sustentação de plataformas Kubernetes e OpenShift para workloads corporativos.",
           b2: "Implementação de fluxos GitOps com ArgoCD para automatizar deploys de aplicações.",
           b3: "Automação do provisionamento de infraestrutura e da gestão de configuração com Terraform e Ansible.",
@@ -191,6 +250,7 @@ window.cvI18n = {
         },
         webera: {
           date: "Agosto de 2021 - Julho de 2022",
+          role: "DevOps Engineer / SRE",
           b1: "Suporte a ambientes Kubernetes executando em AWS e GCP.",
           b2: "Implementação de Infrastructure as Code com Terraform.",
           b3: "Construção e manutenção de fluxos CI/CD com GitHub Actions.",
@@ -199,6 +259,7 @@ window.cvI18n = {
         },
         tce: {
           date: "Dezembro de 2014 - Janeiro de 2017",
+          role: "DevOps Engineer",
           b1: "Implementação de práticas de Infrastructure as Code e automação.",
           b2: "Construção de pipelines CI/CD com Bamboo, Git e ferramentas de automação.",
           b3: "Introdução de processos de deploy baseados em Docker.",
@@ -207,28 +268,41 @@ window.cvI18n = {
         },
         previous: {
           title: "Experiência Anterior",
+          role: "Administrador de Sistemas | Gerente de TI | Diretor de Tecnologia | Consultor de TI",
           b1: "Administração de Linux e Windows.",
           b2: "Infraestrutura corporativa, redes, segurança e virtualização.",
           b3: "Gestão de operações de TI, integração de sistemas e automação de infraestrutura.",
         },
       },
       projects: {
-        eyebrow: "Projetos em Destaque",
+        eyebrow: "Principais Projetos",
         heading: "Trabalhos práticos em plataformas com foco em confiabilidade, automação e velocidade de entrega.",
-        platform: {
-          title: "Plataformas Kubernetes e OpenShift Corporativas",
-          copy:
-            "Desenho, implantação e operação de plataformas de containers para workloads corporativos, com foco em disponibilidade, confiabilidade e autonomia para desenvolvedores.",
+        kubernetesUpgrades: {
+          title: "Atualizações de Plataformas Kubernetes",
+          copy: "Planejamento e execução de atualizações de plataformas Kubernetes com downtime mínimo.",
         },
         gitops: {
-          title: "Automação de Entrega com GitOps",
-          copy:
-            "Implementação de fluxos GitOps e pipelines CI/CD para padronizar deploys, reduzir trabalho manual e melhorar a consistência das releases entre os times.",
+          title: "GitOps com ArgoCD",
+          copy: "Implementação de fluxos GitOps com ArgoCD para deploys de aplicações em Kubernetes e OpenShift.",
         },
-        infrastructure: {
-          title: "Automação de Infraestrutura e Secrets Management",
+        vaultExternalSecrets: {
+          title: "Vault + External Secrets Operator",
           copy:
-            "Automação de provisionamento de infraestrutura, gestão de configuração e tratamento de secrets para operações de plataforma seguras, repetíveis e auditáveis.",
+            "Centralização da gestão de secrets com HashiCorp Vault e External Secrets Operator em ambientes Kubernetes.",
+        },
+        keycloakMigration: {
+          title: "Migração de Keycloak",
+          copy:
+            "Migração de serviços corporativos de identidade usando Red Hat Build of Keycloak em Kubernetes/OpenShift.",
+        },
+        rancherUpgrade: {
+          title: "Atualização da Plataforma Rancher",
+          copy: "Apoio a atualizações da plataforma Rancher e gestão do ciclo de vida de clusters Kubernetes.",
+        },
+        vaultDr: {
+          title: "Disaster Recovery para Vault",
+          copy:
+            "Testes de cenários de disaster recovery do Vault, incluindo backup, restore e validação de recuperação do serviço.",
         },
       },
       credentials: {
