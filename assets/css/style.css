@@ -101,6 +101,35 @@ li + li {
   padding: 10px 12px;
 }
 
+.language-switcher {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  display: inline-flex;
+  margin-left: 8px;
+  padding: 3px;
+}
+
+.language-option {
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 850;
+  line-height: 1;
+  min-height: 32px;
+  padding: 0 10px;
+}
+
+.language-option:hover,
+.language-option:focus-visible,
+.language-option.is-active {
+  background: var(--primary);
+  color: #ffffff;
+}
+
 .nav-links a:hover,
 .nav-links a:focus-visible {
   background: var(--surface-strong);
@@ -229,6 +258,7 @@ h3 {
 .hero-card,
 .skill-card,
 .experience-card,
+.project-card,
 .info-card {
   background: rgba(255, 255, 255, 0.92);
   border: 1px solid var(--line);
@@ -316,14 +346,36 @@ h3 {
   gap: 16px;
 }
 
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
 .skill-card {
   min-height: 230px;
   padding: 24px;
 }
 
+.project-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 280px;
+  padding: 24px;
+}
+
 .skill-card h3,
+.project-card h3,
 .info-card h3 {
   color: var(--primary-dark);
+}
+
+.project-card p {
+  color: var(--muted);
+}
+
+.project-card .tech-line {
+  margin-top: auto;
 }
 
 .tag-list {
@@ -488,6 +540,7 @@ h3 {
   }
 
   .skills-grid,
+  .project-grid,
   .credential-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -533,6 +586,19 @@ h3 {
     padding: 14px;
   }
 
+  .language-switcher {
+    border-radius: var(--radius);
+    justify-content: stretch;
+    margin-left: 0;
+    margin-top: 6px;
+  }
+
+  .language-option {
+    border-radius: calc(var(--radius) - 2px);
+    flex: 1;
+    min-height: 42px;
+  }
+
   .hero,
   .section,
   .contact {
@@ -548,6 +614,7 @@ h3 {
   .contact,
   .experience-card,
   .info-card,
+  .project-card,
   .skill-card {
     padding: 24px;
   }
@@ -559,6 +626,7 @@ h3 {
   }
 
   .skills-grid,
+  .project-grid,
   .credential-grid {
     grid-template-columns: 1fr;
   }

@@ -16,17 +16,22 @@
       <nav class="nav" aria-label="Primary navigation">
         <a class="brand" href="#top">Rousseau Braga</a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
-          <span class="sr-only">Open menu</span>
+          <span class="sr-only" data-i18n="nav.openMenu">Open menu</span>
           <span></span>
           <span></span>
           <span></span>
         </button>
         <div class="nav-links" id="nav-links">
-          <a href="#summary">Summary</a>
-          <a href="#skills">Skills</a>
-          <a href="#experience">Experience</a>
-          <a href="#credentials">Credentials</a>
-          <a href="#contact">Contact</a>
+          <a href="#summary" data-i18n="nav.summary">Summary</a>
+          <a href="#skills" data-i18n="nav.skills">Skills</a>
+          <a href="#experience" data-i18n="nav.experience">Experience</a>
+          <a href="#projects" data-i18n="nav.projects">Projects</a>
+          <a href="#credentials" data-i18n="nav.credentials">Credentials</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+          <div class="language-switcher" aria-label="Language selector" data-i18n-attr="aria-label:nav.languageSelector">
+            <button class="language-option" type="button" data-language="en" aria-pressed="true">EN</button>
+            <button class="language-option" type="button" data-language="pt-BR" aria-pressed="false">PT-BR</button>
+          </div>
         </div>
       </nav>
     </header>
@@ -34,14 +39,14 @@
     <main>
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-content">
-          <p class="eyebrow">Senior DevOps Engineer | SRE | Platform Engineer</p>
+          <p class="eyebrow" data-i18n="hero.eyebrow">Senior DevOps Engineer | SRE | Platform Engineer</p>
           <h1 id="hero-title">Rousseau Braga</h1>
-          <p class="hero-copy">
+          <p class="hero-copy" data-i18n="hero.copy">
             DevOps and reliability engineer with 20+ years in IT and 10+ years focused on cloud
             infrastructure, automation, platform engineering, and enterprise reliability.
           </p>
           <div class="hero-actions" aria-label="Primary actions">
-            <a class="button primary" href="mailto:braga.rousseau@gmail.com">Email Rousseau</a>
+            <a class="button primary" href="mailto:braga.rousseau@gmail.com" data-i18n="hero.email">Email Rousseau</a>
             <a class="button secondary" href="https://linkedin.com/in/rousseau-braga-71840944" rel="me">
               LinkedIn
             </a>
@@ -60,8 +65,8 @@
           >
           <dl class="quick-facts">
             <div>
-              <dt>Location</dt>
-              <dd>Porto Velho, Rondonia, Brazil</dd>
+              <dt data-i18n="hero.locationLabel">Location</dt>
+              <dd data-i18n="hero.location">Porto Velho, Rondonia, Brazil</dd>
             </div>
             <div>
               <dt>Email</dt>
@@ -81,23 +86,23 @@
 
       <section class="section summary-section" id="summary">
         <div class="section-heading">
-          <p class="eyebrow">Professional Summary</p>
-          <h2>Reliable platforms, automated infrastructure, and stronger delivery practices.</h2>
+          <p class="eyebrow" data-i18n="summary.eyebrow">Professional Summary</p>
+          <h2 data-i18n="summary.heading">Reliable platforms, automated infrastructure, and stronger delivery practices.</h2>
         </div>
         <div class="summary-copy">
-          <p>
+          <p data-i18n="summary.p1">
             Senior DevOps Engineer and Site Reliability Engineer with over 20 years of experience in
             Information Technology and more than 10 years focused on DevOps, Platform Engineering,
             Cloud Infrastructure, Automation, and Reliability.
           </p>
-          <p>
+          <p data-i18n="summary.p2">
             Strong experience designing, automating, and operating enterprise platforms using
             Kubernetes, OpenShift, Terraform, Ansible, GitOps, and CI/CD practices. Proven track
             record supporting mission-critical environments, improving platform reliability,
             automating infrastructure provisioning, and enabling development teams through modern
             DevOps methodologies.
           </p>
-          <p>
+          <p data-i18n="summary.p3">
             Experienced in cloud technologies, infrastructure automation, container platforms,
             security best practices, and operational excellence.
           </p>
@@ -106,12 +111,12 @@
 
       <section class="section muted-section" id="skills">
         <div class="section-heading">
-          <p class="eyebrow">Technical Skills</p>
-          <h2>Hands-on experience across cloud, containers, automation, security, and observability.</h2>
+          <p class="eyebrow" data-i18n="skills.eyebrow">Technical Skills</p>
+          <h2 data-i18n="skills.heading">Hands-on experience across cloud, containers, automation, security, and observability.</h2>
         </div>
         <div class="skills-grid">
           <article class="skill-card">
-            <h3>Cloud &amp; Infrastructure</h3>
+            <h3 data-i18n="skills.cloud">Cloud &amp; Infrastructure</h3>
             <ul class="tag-list">
               <li>AWS</li>
               <li>Azure</li>
@@ -121,7 +126,7 @@
             </ul>
           </article>
           <article class="skill-card">
-            <h3>Containers &amp; Orchestration</h3>
+            <h3 data-i18n="skills.containers">Containers &amp; Orchestration</h3>
             <ul class="tag-list">
               <li>Kubernetes</li>
               <li>OpenShift</li>
@@ -132,7 +137,7 @@
             </ul>
           </article>
           <article class="skill-card">
-            <h3>DevOps &amp; CI/CD</h3>
+            <h3 data-i18n="skills.devops">DevOps &amp; CI/CD</h3>
             <ul class="tag-list">
               <li>GitLab CI/CD</li>
               <li>Jenkins</li>
@@ -143,7 +148,7 @@
             </ul>
           </article>
           <article class="skill-card">
-            <h3>Automation &amp; Scripting</h3>
+            <h3 data-i18n="skills.automation">Automation &amp; Scripting</h3>
             <ul class="tag-list">
               <li>Ansible</li>
               <li>AWX</li>
@@ -153,7 +158,7 @@
             </ul>
           </article>
           <article class="skill-card">
-            <h3>Security &amp; Identity</h3>
+            <h3 data-i18n="skills.security">Security &amp; Identity</h3>
             <ul class="tag-list">
               <li>HashiCorp Vault</li>
               <li>Keycloak</li>
@@ -163,7 +168,7 @@
             </ul>
           </article>
           <article class="skill-card">
-            <h3>Monitoring &amp; Observability</h3>
+            <h3 data-i18n="skills.monitoring">Monitoring &amp; Observability</h3>
             <ul class="tag-list">
               <li>ELK Stack</li>
               <li>Zabbix</li>
@@ -172,7 +177,7 @@
             </ul>
           </article>
           <article class="skill-card">
-            <h3>Operating Systems</h3>
+            <h3 data-i18n="skills.os">Operating Systems</h3>
             <ul class="tag-list">
               <li>Red Hat Enterprise Linux</li>
               <li>Ubuntu</li>
@@ -184,26 +189,26 @@
 
       <section class="section" id="experience">
         <div class="section-heading">
-          <p class="eyebrow">Professional Experience</p>
-          <h2>Enterprise platforms, mission-critical operations, and cloud-native delivery.</h2>
+          <p class="eyebrow" data-i18n="experience.eyebrow">Professional Experience</p>
+          <h2 data-i18n="experience.heading">Enterprise platforms, mission-critical operations, and cloud-native delivery.</h2>
         </div>
         <div class="experience-list">
           <article class="experience-card">
             <div class="experience-meta">
-              <p class="date-range">February 2017 - Present</p>
+              <p class="date-range" data-i18n="experience.tjro.date">February 2017 - Present</p>
               <h3>Tribunal de Justiça do Estado de Rondônia</h3>
               <p>DevOps Engineer / Site Reliability Engineer</p>
             </div>
             <div class="experience-detail">
               <ul>
-                <li>Design, deploy, and maintain Kubernetes and OpenShift platforms for enterprise workloads.</li>
-                <li>Implement GitOps workflows using ArgoCD to automate application deployments.</li>
-                <li>Automate infrastructure provisioning and configuration management using Terraform and Ansible.</li>
-                <li>Build and maintain CI/CD pipelines supporting development and operations teams.</li>
-                <li>Implement and manage secrets management solutions using HashiCorp Vault.</li>
-                <li>Support mission-critical judicial systems with high availability and reliability requirements.</li>
-                <li>Lead and mentor SRE engineers in platform operations, automation, and reliability practices.</li>
-                <li>Improve deployment efficiency, platform stability, and operational processes.</li>
+                <li data-i18n="experience.tjro.b1">Design, deploy, and maintain Kubernetes and OpenShift platforms for enterprise workloads.</li>
+                <li data-i18n="experience.tjro.b2">Implement GitOps workflows using ArgoCD to automate application deployments.</li>
+                <li data-i18n="experience.tjro.b3">Automate infrastructure provisioning and configuration management using Terraform and Ansible.</li>
+                <li data-i18n="experience.tjro.b4">Build and maintain CI/CD pipelines supporting development and operations teams.</li>
+                <li data-i18n="experience.tjro.b5">Implement and manage secrets management solutions using HashiCorp Vault.</li>
+                <li data-i18n="experience.tjro.b6">Support mission-critical judicial systems with high availability and reliability requirements.</li>
+                <li data-i18n="experience.tjro.b7">Lead and mentor SRE engineers in platform operations, automation, and reliability practices.</li>
+                <li data-i18n="experience.tjro.b8">Improve deployment efficiency, platform stability, and operational processes.</li>
               </ul>
               <p class="tech-line">
                 Kubernetes, OpenShift, Terraform, Ansible, ArgoCD, GitLab CI/CD, Vault, Linux, Rancher
@@ -213,17 +218,17 @@
 
           <article class="experience-card">
             <div class="experience-meta">
-              <p class="date-range">August 2021 - July 2022</p>
+              <p class="date-range" data-i18n="experience.webera.date">August 2021 - July 2022</p>
               <h3>Webera (USA)</h3>
               <p>DevOps Engineer / SRE</p>
             </div>
             <div class="experience-detail">
               <ul>
-                <li>Supported Kubernetes environments running on AWS and GCP.</li>
-                <li>Implemented Infrastructure as Code using Terraform.</li>
-                <li>Built and maintained CI/CD workflows using GitHub Actions.</li>
-                <li>Assisted development teams with cloud-native deployments and platform operations.</li>
-                <li>Performed infrastructure automation and operational support activities.</li>
+                <li data-i18n="experience.webera.b1">Supported Kubernetes environments running on AWS and GCP.</li>
+                <li data-i18n="experience.webera.b2">Implemented Infrastructure as Code using Terraform.</li>
+                <li data-i18n="experience.webera.b3">Built and maintained CI/CD workflows using GitHub Actions.</li>
+                <li data-i18n="experience.webera.b4">Assisted development teams with cloud-native deployments and platform operations.</li>
+                <li data-i18n="experience.webera.b5">Performed infrastructure automation and operational support activities.</li>
               </ul>
               <p class="tech-line">AWS, GCP, Kubernetes, Terraform, GitHub Actions, Docker</p>
             </div>
@@ -231,17 +236,17 @@
 
           <article class="experience-card">
             <div class="experience-meta">
-              <p class="date-range">December 2014 - January 2017</p>
+              <p class="date-range" data-i18n="experience.tce.date">December 2014 - January 2017</p>
               <h3>Tribunal de Contas do Estado de Rondônia</h3>
               <p>DevOps Engineer</p>
             </div>
             <div class="experience-detail">
               <ul>
-                <li>Implemented Infrastructure as Code and automation practices.</li>
-                <li>Built CI/CD pipelines using Bamboo, Git, and automation tools.</li>
-                <li>Introduced Docker-based deployment processes.</li>
-                <li>Improved software delivery speed and deployment consistency.</li>
-                <li>Integrated SonarQube into the development lifecycle to improve code quality.</li>
+                <li data-i18n="experience.tce.b1">Implemented Infrastructure as Code and automation practices.</li>
+                <li data-i18n="experience.tce.b2">Built CI/CD pipelines using Bamboo, Git, and automation tools.</li>
+                <li data-i18n="experience.tce.b3">Introduced Docker-based deployment processes.</li>
+                <li data-i18n="experience.tce.b4">Improved software delivery speed and deployment consistency.</li>
+                <li data-i18n="experience.tce.b5">Integrated SonarQube into the development lifecycle to improve code quality.</li>
               </ul>
               <p class="tech-line">Docker, Bamboo, Git, Linux, SonarQube</p>
             </div>
@@ -250,53 +255,86 @@
           <article class="experience-card">
             <div class="experience-meta">
               <p class="date-range">1992 - 2014</p>
-              <h3>Previous Experience</h3>
+              <h3 data-i18n="experience.previous.title">Previous Experience</h3>
               <p>System Administrator | IT Manager | Technology Director | IT Consultant</p>
             </div>
             <div class="experience-detail">
               <ul>
-                <li>Linux and Windows administration.</li>
-                <li>Enterprise infrastructure, networking, security, and virtualization.</li>
-                <li>IT operations management, systems integration, and infrastructure automation.</li>
+                <li data-i18n="experience.previous.b1">Linux and Windows administration.</li>
+                <li data-i18n="experience.previous.b2">Enterprise infrastructure, networking, security, and virtualization.</li>
+                <li data-i18n="experience.previous.b3">IT operations management, systems integration, and infrastructure automation.</li>
               </ul>
             </div>
           </article>
         </div>
       </section>
 
+      <section class="section muted-section" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="projects.eyebrow">Featured Projects</p>
+          <h2 data-i18n="projects.heading">Practical platform work focused on reliability, automation, and delivery speed.</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <h3 data-i18n="projects.platform.title">Enterprise Kubernetes and OpenShift Platforms</h3>
+            <p data-i18n="projects.platform.copy">
+              Designed, deployed, and operated container platforms for enterprise workloads with a
+              strong focus on availability, reliability, and developer enablement.
+            </p>
+            <p class="tech-line">Kubernetes, OpenShift, Rancher, Linux</p>
+          </article>
+          <article class="project-card">
+            <h3 data-i18n="projects.gitops.title">GitOps Delivery Automation</h3>
+            <p data-i18n="projects.gitops.copy">
+              Implemented GitOps workflows and CI/CD pipelines to standardize deployments, reduce
+              manual work, and improve release consistency across teams.
+            </p>
+            <p class="tech-line">ArgoCD, GitLab CI/CD, GitHub Actions, Docker</p>
+          </article>
+          <article class="project-card">
+            <h3 data-i18n="projects.infrastructure.title">Infrastructure Automation and Secrets Management</h3>
+            <p data-i18n="projects.infrastructure.copy">
+              Automated infrastructure provisioning, configuration management, and secrets handling
+              for secure, repeatable, and auditable platform operations.
+            </p>
+            <p class="tech-line">Terraform, Ansible, HashiCorp Vault, AWS</p>
+          </article>
+        </div>
+      </section>
+
       <section class="section credential-section" id="credentials">
         <div class="section-heading">
-          <p class="eyebrow">Credentials</p>
-          <h2>Certifications, education, and languages.</h2>
+          <p class="eyebrow" data-i18n="credentials.eyebrow">Credentials</p>
+          <h2 data-i18n="credentials.heading">Certifications, education, and languages.</h2>
         </div>
         <div class="credential-grid">
           <article class="info-card">
-            <h3>Certifications</h3>
+            <h3 data-i18n="credentials.certifications.title">Certifications</h3>
             <ul>
               <li>GitOps Certified for Argo</li>
               <li>ITIL Intermediate - Operational Support and Analysis</li>
-              <li>Terraform Infrastructure Automation</li>
-              <li>Kubernetes Training and Certification Programs</li>
+              <li data-i18n="credentials.certifications.terraform">Terraform Infrastructure Automation</li>
+              <li data-i18n="credentials.certifications.kubernetes">Kubernetes Training and Certification Programs</li>
             </ul>
           </article>
           <article class="info-card">
-            <h3>Education</h3>
+            <h3 data-i18n="credentials.education.title">Education</h3>
             <div class="stacked-list">
               <div>
-                <strong>MBA - Software Engineering</strong>
+                <strong data-i18n="credentials.education.mba">MBA - Software Engineering</strong>
                 <span>IGTI - Instituto de Gestão em Tecnologia da Informação</span>
               </div>
               <div>
-                <strong>Bachelor's Degree - Systems Analysis and Development</strong>
+                <strong data-i18n="credentials.education.degree">Bachelor's Degree - Systems Analysis and Development</strong>
                 <span>UNOPAR</span>
               </div>
             </div>
           </article>
           <article class="info-card">
-            <h3>Languages</h3>
+            <h3 data-i18n="credentials.languages.title">Languages</h3>
             <div class="language-list">
-              <p><strong>Portuguese:</strong> Native</p>
-              <p><strong>English:</strong> Professional Working Proficiency</p>
+              <p data-i18n-html="credentials.languages.portuguese"><strong>Portuguese:</strong> Native</p>
+              <p data-i18n-html="credentials.languages.english"><strong>English:</strong> Professional Working Proficiency</p>
             </div>
           </article>
         </div>
@@ -304,8 +342,8 @@
 
       <section class="contact" id="contact" aria-labelledby="contact-title">
         <div>
-          <p class="eyebrow">Contact</p>
-          <h2 id="contact-title">Available for DevOps, SRE, platform engineering, and reliability work.</h2>
+          <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+          <h2 id="contact-title" data-i18n="contact.heading">Available for DevOps, SRE, platform engineering, and reliability work.</h2>
         </div>
         <div class="contact-links">
           <a href="mailto:braga.rousseau@gmail.com">braga.rousseau@gmail.com</a>
@@ -318,9 +356,10 @@
     </main>
 
     <footer class="footer">
-      <p>&copy; <span id="year"></span> Rousseau Braga. All rights reserved.</p>
+      <p data-i18n-html="footer.rights">&copy; <span id="year"></span> Rousseau Braga. All rights reserved.</p>
     </footer>
 
+    <script src="assets/js/i18n.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
