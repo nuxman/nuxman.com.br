@@ -241,17 +241,16 @@ h3 {
   box-shadow: var(--shadow);
 }
 
-.profile-mark {
-  width: 84px;
-  height: 84px;
-  border-radius: var(--radius);
-  background: var(--primary-dark);
-  color: #ffffff;
-  display: grid;
-  place-items: center;
-  font-size: 1.55rem;
-  font-weight: 850;
+.profile-photo {
+  width: clamp(140px, 42vw, 180px);
+  height: clamp(140px, 42vw, 180px);
+  aspect-ratio: 1;
+  border: 1px solid rgba(216, 226, 228, 0.95);
+  border-radius: 50%;
+  box-shadow: 0 14px 34px rgba(19, 32, 34, 0.14);
+  display: block;
   margin-bottom: 24px;
+  object-fit: cover;
 }
 
 .quick-facts {
