@@ -39,12 +39,12 @@ window.cvI18n = {
           label: "in DevOps/SRE",
         },
         platforms: {
-          value: "Enterprise",
-          label: "Platforms",
+          value: "Platform",
+          label: "Engineering"
         },
         cloud: {
           value: "Cloud & Automation",
-          label: "Specialist",
+          label: "Infrastructure"
         },
       },
       summary: {
@@ -204,12 +204,12 @@ window.cvI18n = {
           label: "em DevOps/SRE",
         },
         platforms: {
-          value: "Plataformas",
-          label: "Corporativas",
+          value: "Engenheiro",
+          label: "de Plataforma",
         },
         cloud: {
           value: "Cloud e Automação",
-          label: "Especialista",
+          label: "infraestrutura",
         },
       },
       summary: {
